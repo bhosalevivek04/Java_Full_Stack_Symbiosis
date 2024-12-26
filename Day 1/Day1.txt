@@ -1,0 +1,80 @@
+Focus on OOPS
+1) Encapsulation
+- hiding your properties and exposing your behaviour
+
+2) Inheritance
+- extends existing class
+
+3) Abstraction
+- showing only necessary information to the outside world while hiding the internal details
+
+4)Polymorphism
+- ability of an object to take on multiple forms
+
+*******************************************************************************************************
+why we use Java?
+- Robust - trusted
+- Platform Dependance
+- JIT comipiler + Interpreter
+    JIT - if code is repeated then it will execute them avoid repeatation
+- WORA
+- Security - 2 level checking
+- Realible
+- OOP
+- Dynamic
+- Multithreading
+-  Distributed
+
+********************************************************************************************************
+JVM - Java Virtual Machine
+- Runtime execution
+- JVM installation needed to execute code
+
+1) Class Loader
+    1) Std Library Classes - Use Bootstrap Class Loader
+    2) Non-Std Library classes - Extension Class Loader (eg. MySQL driver)
+    3) User defined classes- Application Class Loader
+
+2) JVM Memory
+    1) Method Area - Store Metadata of Class
+    2) Heap - store Objects and arrays, static variables
+    3) Stack - store local variables, method calls and references
+    4) PC Register - stores address of current executing instruction /  current method calling count
+    5) Native Interface Method Area - for native method information eg OS, Kernal Methods
+
+3) Execution Engine
+    1) Interpreter - Execute line by line
+    2) Just-In-Time (JIT) Compiler - a compiler that compiles bytecode into native machine code at runtime, improving performance by avoiding repeated interpretation of the same code.
+    3) Garbage Collection - a process that automatically frees up memory occupied by objects that are no longer needed or referenced, preventing memory leaks and ensuring efficient memory usage.
+        - work in heap Area
+
+4) Native Interface
+    1) Bridge between OS and our java code
+
+********************************************************************************************************
+Flow of Code Execution
+
+1) Java Code (.java) 
+2) Compile (.java -> .class) - javac compiler
+3) Class Loader (.class -> JVM)
+4) Byte Code Verifier (.class -> JVM)
+5) Execution Engine (JVM -> Machine Code) 
+   a) Interpreter
+   b) JIT (Just-In-Time) Compiler
+6) Native Method Interface (JVM -> Native Method Libraries)
+7) Native Method Libraries (Native Method Interface -> Machine Code)
+
+********************************************************************************************************
+Class
+- A class is a blueprint or a template that defines the properties and behavior of an instance/ object.
+- Object is instance of Class
+- holding current states/ properties
+eg. class Fan{
+    int speed;
+    void increaseSpeed(){
+        speed++;
+    }
+    void decreaseSpeed(){
+        speed--;
+    }
+}
