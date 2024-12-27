@@ -1,0 +1,89 @@
+JDK (Java Development Kit) 
+- JDK is a software development kit used by Java developers. It includes a set of tools for developing, debugging, and monitoring Java applications. The JDK also includes the JRE (Java Runtime Environment), which is necessary for running Java applications.
+1) Compiler (javac)
+2) JVM
+3) Java Doc (javadoc)
+4) Java Debugger (jdb)
+5) Standard Libraries
+
+********************************************************************************************
+Why we use IDE?
+- Rapid Application Development
+
+********************************************************************************************
+Servlet
+- A servlet is a small Java program that runs on a web server. It acts as an intermediary between a request from a web browser or other HTTP client and a response from a server.
+
+********************************************************************************************
+Structure of Class
+- class keyword
+- always follow naming convention
+- first character of class name among ($, _ , a-z, A-Z) //but mainly we don't use $, _
+- we don't use digit at first letter of class name bcz it not valid
+- Code:
+    class FirstProgram{
+        public static void main(String[] args) {
+            System.out.println("Hello");
+        }
+    }
+- use camal case for writing class, variable, method name
+
+- The main method is public so the JVM can find it and start the program.
+- The main method is the starting point of every Java program.
+- The main method is static because the JVM calls it before creating any objects.
+- The main method does not return a value because it's not meant to be used as a function.
+- The main method takes an array of strings as arguments, which are passed from the command line.
+- String[] args, String... args,[]String a
+- main() method automatically throws exception back ti default exception handler(JVM) no need to write throws.
+
+Inside Class-
+1) Instance variable/ fields/ properties
+    - Instance variable
+    - class variable/ static variable
+    - local variable
+    - parameterised variable
+2) Methods/ Instance method/ behaviour
+
+eg. syntax of variable
+    accessModifier dataType name
+    int age; //here default accessModifier is used
+
+eg. syntax for method
+- always mention accessModifier
+    accessModifier <modifier like static, sync> returnType nameOfMethod(<parameterised variable>) <throws>{     <>= this means optional
+
+    }
+    public void printVariable(){
+
+    }
+
+Actual Class eg.
+   class ClassStructure {
+        int variable1; // instance variables
+        int variable2;
+
+        // System.out.println("Hi"); // invalid
+
+        public void printVariable1() { // method
+            System.out.println("Variable value: " + variable1);
+        }
+
+        public static void main(String[] args) {
+            ClassStructure object1 = new ClassStructure(); //when variable not allocated any memory until we can't use
+            object1.printVariable1();
+        }
+    } 
+- new keyword is used for memory allocation
+
+3) Constructor
+    - it will initialise instance variable
+    types:
+        1) Default Constructor
+        2) Parameterised Constructor
+
+    - syntax of Constructor
+    accessModifier exactSameNameAsClass(){
+        
+    }
+
+********************************************************************************************
