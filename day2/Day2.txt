@@ -83,7 +83,5 @@ Actual Class eg.
 
     - syntax of Constructor
     accessModifier exactSameNameAsClass(){
-        
-    }
 
-********************************************************************************************
+    }
