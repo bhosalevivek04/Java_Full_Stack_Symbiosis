@@ -1,0 +1,3 @@
+- implement varible shadowing and check value 
+- Parameterised constructor
+- float and double capacity example

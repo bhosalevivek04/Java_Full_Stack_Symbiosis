@@ -11,4 +11,89 @@ types:
     
 - JVM will  initialise default values for constructor
 - in copy constructor concept we used deep and shallow copy
-- 
+- when any constructor not defined then compiler will initialise default constructor
+***************************************************************************************
+
+Class
+- The amount of memory used by an object.
+- it defines a data type by building data(fields) and Methods(operations) into a single unit.
+
+- inside class we can write below things:
+    - instance variables
+    - Methods
+    - constructor
+    - blocks : static/instance
+    - Nested class/interface
+
+Marker Interface
+- An interface with no methods and variables is referred to as a Marker Interface
+- classes are static
+- objects are Dynamic
+
+
+Mutator
+- A mutator method is used to modify the state of an object. It does not return anything.
+
+Accessor
+- An accessor method is used to access the state of an object. It returns the value of a private field.
+
+
+Variable Shadowing
+- Variable shadowing occurs when a variable declared within a certain scope (decision block, method, or inner class) has the same name as a variable declared in an outer scope.
+- In such cases, the inner variable "shadows" the outer variable, which means the outer variable is not accessible within the inner scope.
+- The inner variable is said to "shadow" the outer variable.
+- eg.
+    class Student{
+        int age;
+        public void setAge(int age){
+            age=age;
+        }
+    }
+- hence this keyword concept arise
+    class Student{
+        int age;
+        public void setAge(int age){
+            this.age=age;
+        }
+    }
+
+*************************************************************************************************
+Primitive Data Tyepes:
+1) Integer
+    i) byte: 8-bit signed(Positive + Negative) 2's complement data type 
+    ii) short: 16-bit
+    iii) int: 32-bit
+    iv) long: 64-bit
+2) Float
+    i)float: 32-bit single precision of 6-7 digits
+    ii)double: 64-bit double precisionof 15-16 digits
+3) Character
+    i)char: 16-bit unicode character representation eg. '\u0000'
+4) Boolean
+    i)boolean: 1-bit 
+
+- why we still use java?
+    - Memory Space
+    - Better Performance
+
+***********************************************************************************************
+Literals:
+- Literals are the constant values that are used in any Java program. These values are used to assign to a variable.
+- eg. int no = 10; 
+
+Examples of all primitive data types in Java
+// Integer Types
+byte byteExample = 10;
+short shortExample = 20;
+int intExample = 30;
+long longExample = 40L;
+
+// Float Types
+float floatExample = 50.5f;
+double doubleExample = 60.6;
+
+// Character Type
+char charExample = 'A';
+
+// Boolean Type
+boolean booleanExample = true;
