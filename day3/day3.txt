@@ -1,0 +1,14 @@
+Constructor
+- Special Method
+- don't have return type
+- constructor invoked through new keyword
+- Variable: a named storage location
+
+types:
+    1) Default Constructor
+    2) Parameterised Constructor
+    3) Copy Constructor
+    
+- JVM will  initialise default values for constructor
+- in copy constructor concept we used deep and shallow copy
+- 
