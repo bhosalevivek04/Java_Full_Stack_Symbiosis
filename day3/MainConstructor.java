@@ -8,7 +8,5 @@ public class MainConstructor {
 
         ConstructorExample obj3 = new ConstructorExample(obj2);
         obj3.printValues();
-
-        
     }
 }
