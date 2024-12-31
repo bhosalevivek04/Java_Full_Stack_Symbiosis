@@ -1,4 +1,4 @@
-Rules 
+Rules: 
 1) Maintainability
 2) Readability
 
