@@ -1,0 +1,122 @@
+Type Casting:
+    Type casting is the process of converting one data type into another. In Java, there are two types of type casting:
+    1. Widening: Implicit Type Casting
+        - Widening, also known as implicit type casting, is the process of converting a smaller data type to a larger data type. This is done automatically by the compiler.
+    2. Narrowing: Explicit Type Casting
+        - Narrowing, also known as explicit type casting, is the process of converting a larger data type to a smaller data type. This is done manually by the programmer.
+
+- boolean has not converted to any data type and another data type also we cant convert to boolean.
+
+Implicit Type Casting:
+    - byte -> short -> int -> long -> float -> double
+    eg. 
+    byte b = 10;
+    short s = b; // Implicit casting from byte to short
+    int i = s; // Implicit casting from short to int
+    long l = i; // Implicit casting from int to long
+    float f = l; // Implicit casting from long to float
+    double d = f; // Implicit casting from float to double
+
+Explicit Type Casting:
+    - byte <- short <- int <- long <- float <- double
+    eg. 
+    double d = 10.5;
+    float f = (float)d; // Explicit casting from double to float
+    long l = (long)f; // Explicit casting from float to long
+    int i = (int)l; // Explicit casting from long to int
+    short s = (short)i; // Explicit casting from int to short
+    byte b = (byte)s; // Explicit casting from short to byte
+
+- long to float implicitly happen
+- char to short and short to char happen explicitly
+
+***************************************************************************************************************
+
+Object UpCasting:
+    - Upcasting is the process of converting a subclass object to its superclass type. This is done implicitly by the compiler and is always successful.
+    - eg.
+    String name="ABC";
+    Object obj= name;
+
+    Animal animal = new Dog(); // Upcasting from Dog to Animal
+    animal.eat(); // Calling a method available in Animal class
+
+Object DownCasting:
+    - Downcasting is the process of converting a superclass object to its subclass type. This is done explicitly by the programmer and may throw a ClassCastException if the object being cast is not of the correct type.
+    - eg. 
+    Object obj= new Object();
+    String name1= (String)obj;
+
+    Animal animal = new Dog(); // Upcasting from Dog to Animal
+    Dog dog = (Dog) animal; // Downcasting from Animal to Dog
+    dog.bark(); // Calling a method available in Dog class
+
+Grammer
+- variable, object, class name should be noun
+- method name should be verb
+
+*******************************************************************************************
+
+Operators:
+    1) Arithmetic Operator:
+     - Addition (+)
+     - Subtraction (-)
+     - Multiplication (*)
+     - Division (/)
+     - Modulus (%)
+     - Increment (++)
+     - Decrement (--)
+    
+    2) Comparative Operator:
+     - Equal to (==)
+     - Not Equal to (!=)
+     - Greater than (>)
+     - Less than (<)
+     - Greater than or Equal to (>=)
+     - Less than or Equal to (<=)
+
+    3) Assignment Operator
+    - Simple Assignment (=)
+    - Addition Assignment (+=)
+    - Subtraction Assignment (-=)
+    - Multiplication Assignment (*=)
+    - Division Assignment (/=)
+    - Modulus Assignment (%=)
+
+    4) Logical Operator
+    - AND (&&)
+    - OR (||)
+    - NOT (!)
+
+    5) Bitwise Logical Operator
+    - AND (&) Example: 5 & 3 = 1
+    - OR (|) Example: 5 | 3 = 7
+    - XOR (^) Example: 5 ^ 3 = 6
+    - NOT (~) Example: ~5 = -6
+
+    6) Unary Operator
+     - ++
+        - pre increment 
+        - post increment
+     - --
+        - pre decrement
+        - post decrement
+     - !
+     - ~
+
+    7) Bitwise Operator
+    - Right Shift (>>): Example: 5 >> 1 = 2
+    - Left Shift (<<): Example: 5 << 1 = 10
+    - Unsigned Right Shift (>>>): Example: -5 >>> 1 = 2147483645
+    - Bitwise NOT (~): Example: ~5 = -6
+
+    - If the number is negative, the leftmost bit is 1, and the right shift operator fills in the leftmost bit with the sign bit (1 for negative numbers, 0 for positive numbers).
+    
+    8) Ternary Operator
+     - Condition ? true : false
+     - eg . String msg= (10>7)? "10 is greater" : "7 is greater";
+     - nested Ternary operator we can use
+     - 
+
+
+    
