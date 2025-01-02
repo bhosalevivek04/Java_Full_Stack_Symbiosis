@@ -119,4 +119,6 @@ Operators:
      - 
 
 
-    
+Exception:
+- Class Cast Exception
+- Number format Exception
