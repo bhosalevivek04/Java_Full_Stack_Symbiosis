@@ -19,3 +19,6 @@ Syllabus
 Two way Communication
 
 Follow Java Documentation
+
+Batch Code
+- SDA XT J122
