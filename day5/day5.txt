@@ -1,0 +1,102 @@
+02/01/2025 Thu
+
+Control Statements:
+    - if
+        - Description: Executes a block of code if the condition is true.
+        - Example:
+            if (condition) {
+                // code to execute if condition is true
+            }
+
+    - if-else
+        - Description: Executes one block of code if the condition is true, and another block if it is false.
+        - Example:
+            if (condition) {
+                // code to execute if condition is true
+            } else {
+                // code to execute if condition is false
+            }
+
+    - else-if ladder
+        - Description: Allows checking multiple conditions sequentially.
+        - Example:
+            if (condition1) {
+                // code for condition1
+            } else if (condition2) {
+                // code for condition2
+            } else {
+                // code if none of the conditions are true
+            }
+
+    - switch case
+        - Description: A control statement that allows a variable to be tested for equality against a list of values.
+        - Example:
+            switch (variable) {
+                case value1:
+                    // code to execute if variable equals value1
+                    break;
+                case value2:
+                    // code to execute if variable equals value2
+                    break;
+                default:
+                    // code to execute if variable doesn't match any case
+            }
+
+Conditional Statements:
+    1) for (): entry control loop
+    - Syntax:
+    - for(initialization;condition;reinitialization){
+    }
+    - initialization execute only once at start
+    - when we use for loop : index based operation and finite operation
+    - Description: Executes a block of code a specified number of times.
+        - Example:
+            for (int i = 0; i < 5; i++) {
+                // code to execute 5 times
+            }
+
+    2) while () : exit control loop
+        - Description: Repeats a block of code as long as a specified condition is true.
+        - executation use for condition based
+        - Example:
+            while (condition) {
+                // code to execute while condition is true
+            }
+
+    - do-while
+        - Description: Similar to while, but guarantees that the block of code is executed at least once.
+        - Example:
+            do {
+                // code to execute
+            } while (condition);
+
+    
+    - break
+        - Example:
+            for (int i = 0; i < 5; i++) {
+                if (i == 3) {
+                    break; // Exit the loop when i is 3
+                }
+                // code to execute
+            }
+    - continue
+        - Example:
+            for (int i = 0; i < 5; i++) {
+                if (i == 3) {
+                    continue; // Skip the current iteration when i is 3
+                }
+                // code to execute
+            }
+
+-  Sonar Cube
+
+- Synchronous and Asychronous
+
+
+Left Shift
+- Shortcut
+    n * 2^p   n= number, p=Bit Shift
+
+Right Shift
+- Shortcut
+    n / 2^p

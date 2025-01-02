@@ -1,0 +1,14 @@
+package
+class
+- numbermanipulation
+
+variable1
+variable2
+
+getter and setter
+
+method
+    printVarible
+    swap with third variable
+    swap without third variable
+    printVarible
