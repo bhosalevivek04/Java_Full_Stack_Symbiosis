@@ -1,4 +1,4 @@
-Start Java Full Stack Course by Chandrakant Shinde Sir
+Start Java Full Stack Course by Chakradhar Shinde Sir
 
 Focus on OOPS
 1) Encapsulation
