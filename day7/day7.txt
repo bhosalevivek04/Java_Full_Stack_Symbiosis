@@ -108,3 +108,135 @@ public class PerfectNumber {
 
 
 Prime Number
+package com.vivek.logicprograms.primenumber;
+
+public class PrimeNumber {
+	int number;
+	public PrimeNumber() {}
+	
+	public PrimeNumber(int number) {
+		this.number=number;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	
+	public boolean isPrime() {
+		int div=2;
+		while(div<number) {
+			if(number%div==0) {
+				return false;
+			}else {
+				div++;
+			}
+		}
+		return true;
+	}
+}
+
+Helper class for access all code at one position
+package com.vivek.logicprograms.presentationlayer;
+
+import java.util.Scanner;
+
+import com.vivek.logicprograms.armstrongnumber.ArmStrongNumber;
+import com.vivek.logicprograms.perfectnumber.PerfectNumber;
+import com.vivek.logicprograms.primenumber.PrimeNumber;
+import com.vivek.logicprograms.reversenumber.ReverseNumber;
+
+public class Helper {
+	public int printMenu(Scanner scanner) {
+		System.out.println("1. to check if Number is Palindrome");
+		System.out.println("2. to check if Number is Armstrong");
+		System.out.println("3. to check if Number is Perfect");
+		System.out.println("4. to check if Number is Prime");
+		System.out.println("0. for exit");
+		return scanner.nextInt();
+	}
+	public void checkPallindrome(Scanner scanner) {
+		ReverseNumber number=new ReverseNumber();
+		System.out.println("Enter a Number:");
+		int variable=scanner.nextInt();
+		number.setNumber(variable);
+		
+		if(number.checkForPallindromeNumber()) {
+			System.out.println(variable+" is a Pallindrome Number");
+		}else {
+			System.out.println(variable+" is a not Pallindrome Number");
+		}
+	}
+	
+	public void checkArmStrong(Scanner scanner) {
+		ArmStrongNumber number=new ArmStrongNumber();
+		System.out.println("Enter a Number:");
+		int variable=scanner.nextInt();
+		number.setNumber(variable);
+		if(number.isArmstrongNumber()) {
+			System.out.println(variable+" is a ArmStrong Number");
+		}else {
+			System.out.println(variable+" is a not ArmStrong Number");
+		}
+	}
+	
+	public void checkPerfect(Scanner scanner) {
+		PerfectNumber number=new PerfectNumber();
+		System.out.println("Enter a Number:");
+		int variable=scanner.nextInt();
+		number.setNumber(variable);
+		if(number.isPerfectNumber()) {
+			System.out.println(variable+" is a Perfect Number");
+		}else {
+			System.out.println(variable+" is a not Perfect Number");
+		}
+	}
+	
+	public void checkPrime(Scanner scanner) {
+		PrimeNumber number=new PrimeNumber();
+		System.out.println("Enter a Number:");
+		int variable=scanner.nextInt();
+		number.setNumber(variable);
+		if(number.isPrime()) {
+			System.out.println(variable+" is a Prime Number");
+		}else {
+			System.out.println(variable+" is a not Prime Number");
+		}
+	}
+}
+
+Main Menu class
+package com.vivek.logicprograms.presentationlayer.mainmenudriven;
+
+import java.util.Scanner;
+
+import com.vivek.logicprograms.presentationlayer.Helper;
+
+public class MainMenuDriven {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		Helper helper = new Helper();
+		int option;
+		do {
+			option=helper.printMenu(scanner);
+			System.out.println(option);
+			switch(option) {
+			case 1: helper.checkPallindrome(scanner);
+			break;
+			case 2: helper.checkArmStrong(scanner);
+			break;
+			case 3: helper.checkPerfect(scanner);
+			break;
+			case 4: helper.checkPrime(scanner);
+			break;
+			case 0: System.out.println("Bye...");
+			break;
+			default:System.out.println("Invalid Input");
+			}
+		}while(option!=0);
+		scanner.close();
+	}
+}
