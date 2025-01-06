@@ -1,0 +1,110 @@
+ArmStrong Number:
+
+package com.vivek.logicprograms.armstrongnumber;
+
+public class ArmStrongNumber {
+	int number;
+
+	public ArmStrongNumber() {
+	}
+
+	public ArmStrongNumber(int number) {
+		this.number = number;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public int calculateNumberOfDigit() {
+		int temp = number;
+		int count = 0;
+		while (temp != 0) {
+			temp /= 10;
+			count++;
+		}
+		return count;
+	}
+
+	public int calculatePower(int digit, int count) {
+		int power = 1;
+		for (int i = 0; i < count; i++) {
+			power *= digit;
+		}
+		return power;
+	}
+
+	public boolean isArmstrongNumber() {
+		int count = calculateNumberOfDigit();
+		int temp = number;
+		int armstrong = 0;
+		while (temp != 0) {
+			armstrong += calculatePower(temp % 10, count);
+			temp /= 10;
+		}
+		return number == armstrong;
+	}
+}
+
+ // Test case 1: 153 (1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153)
+ // Test case 2: 370 (3^3 + 7^3 + 0^3 = 27 + 343 + 0 = 370)
+
+************************************************************************************************************
+
+Scanner class
+    nextBoolean
+    nextByte
+    nextShort
+    nextInt
+    nextLong
+    nextFloat
+    nextDouble
+    next
+    nextLine
+
+Example: Cache
+Scanner scanner = new Scanner(System.in);
+int data = scanner.nextInt(); // This will read the integer data
+scanner.nextLine(); // This is to consume the newline left-over
+String line = scanner.nextLine(); // This will read the line of text
+
+***************************************************************************************************
+
+Perfect Number
+package com.vivek.logicprograms.perfectnumber;
+
+public class PerfectNumber {
+	int number;
+
+	public PerfectNumber() {
+	}
+
+	public PerfectNumber(int number) {
+		this.number = number;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public boolean isPerfectNumber() {
+		int sum = 0;
+		for (int i = 1; i <= number / 2; i++) {
+			if (number % i == 0) {
+				sum += i;
+			}
+		}
+		return sum == number;
+	}
+}
+
+
+Prime Number

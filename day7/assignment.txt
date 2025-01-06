@@ -1,0 +1,1 @@
+find perfect number, armstrong number, prime number in range 1 to 100
