@@ -10,7 +10,9 @@ public class MainPrimeNumber {
 //		System.out.println("Enter a Number:");
 //		int num=scanner.nextInt();
 		PrimeNumber number=new PrimeNumber();
-		for (int i = 2; i <=100; i++) {
+		
+		for (int i = 1; i <=100; i++) {
+			number.setNumber(i);
 			if(number.isPrime()) {
 				System.out.println(i+" is Prime Number");
 			}else {
