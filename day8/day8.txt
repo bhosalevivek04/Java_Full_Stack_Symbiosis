@@ -1,0 +1,61 @@
+Day 8 - Logic Programs Implementation
+
+This project implements various fundamental programming logic problems organized in a menu-driven application. The project structure follows object-oriented principles with clear separation of concerns.
+
+Key Components:
+
+1. Menu-Driven Interface
+- Implemented in MainMenuDriven class
+- Provides 11 different options for various operations
+- Uses Helper class to manage different operations
+- Continues until user chooses to exit (option 0)
+
+2. Core Features:
+a) Number Operations:
+   - Palindrome checker
+   - Armstrong number validator
+   - Perfect number checker
+   - Prime number validator
+
+b) String Operations:
+   - String reversal
+   - String line reversal
+   - Character counting (vowels and consonants)
+
+c) Series Generators:
+   - Fibonacci series
+   - Cube-Square series
+   - Alternative series (1 5 3 7 5 9 7 11)
+   - Character series (A E C G E I G K)
+
+3. Notable Implementations:
+
+Character Counting:
+- Counts occurrences of vowels (a,e,i,o,u) and consonants
+- Handles both uppercase and lowercase letters
+
+String Reversal:
+- Two methods implemented:
+  * reverseString(): Reverses individual string using char array
+  * reverseStringLine(): Reverses words in a sentence while maintaining word order
+
+Series Generation:
+- Multiple series implementations showing different mathematical patterns
+- Includes both numeric and character-based series
+
+4. Design Patterns:
+- Uses MVC-like structure (separation of main classes and logic)
+- Implements encapsulation through proper getter/setter methods
+- Each functionality is modularized into separate classes
+
+5. Input Handling:
+- Uses Scanner class for user input
+- Proper resource management with scanner.close()
+- Input validation for menu options
+
+The implementation demonstrates good programming practices including:
+- Clean code organization
+- Proper package structure
+- Encapsulation of functionality
+- Reusable components
+- User-friendly interface
