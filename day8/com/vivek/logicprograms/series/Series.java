@@ -63,4 +63,24 @@ public class Series {
 			ch++;
 		}
 	}
+
+	public void printPattern1() {
+		int number = 1;
+		for (int row = 1; row <= limit; row++) {
+			for (int space = 1; space <= limit - row; space++) {
+				System.out.print("  ");
+			}
+
+			for (int col = 1; col <= row; col++) {
+				if (number % 2 == 0) {
+					System.out.print(number * number + " ");
+				} else {
+					System.out.print(number * number * number + " ");
+				}
+				number++;
+			}
+			System.out.println();
+		}
+	}
+
 }

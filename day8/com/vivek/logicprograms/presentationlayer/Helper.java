@@ -23,7 +23,7 @@ public class Helper {
 		System.out.println("9. to print Qube Square Series");
 		System.out.println("10. to print Alternative series");
 		System.out.println("11. to print Character series");
-
+		System.out.println("12. to print Pattern 1");
 		System.out.println("0. for exit");
 		return scanner.nextInt();
 	}
@@ -142,5 +142,14 @@ public class Helper {
 		series.setLimit(variable);
 		System.out.println("Series: ");
 		series.printCharSeries();
+	}
+
+	public void printPattern1(Scanner scanner) {
+		Series series = new Series();
+		System.out.println("Enter a number upto Print Pattern 1");
+		int variable=scanner.nextInt();
+		series.setLimit(variable);
+		System.out.println("Pattern 1: ");
+		series.printPattern1();
 	}
 }

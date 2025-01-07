@@ -46,12 +46,16 @@ public class MainMenuDriven {
 			case 11:
 				helper.printCharSeries(scanner);
 				break;
+			case 12:
+				helper.printPattern1(scanner);
+				break;
 			case 0:
 				System.out.println("Bye...");
 				break;
 			default:
 				System.out.println("Invalid Input");
 			}
+			System.out.println();
 		} while (option != 0);
 		scanner.close();
 	}
