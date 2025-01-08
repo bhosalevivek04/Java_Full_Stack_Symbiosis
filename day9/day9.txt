@@ -1,3 +1,65 @@
 Day 9 Github
 
 STS Github Demo
+
+Final Keyword
+The final keyword in Java is used to restrict the user. The java final keyword can be used in many contexts. Final can be:
+- variable
+- method
+- class
+
+final variable
+A final variable can be explicitly initialized only once. A reference variable declared final can never be reassigned to refer to an different object.
+
+Syntax:
+final int var=10;
+
+final method
+A final method can't be overridden.
+
+Syntax:
+- access modifier <modifier> return-type method name(<parameters>)<throws>{
+}
+
+final class
+A final class can't be inherited.
+
+Syntax:
+public final class ClassName {
+}
+
+***************************************************************************************************
+Static Keyword:
+The static keyword in Java is used to create a class-level variable or method. When a variable is declared with the static keyword, it means that the variable is shared among all instances of the class. The static keyword can be used in many contexts. Static can be:
+- variable
+- method
+- block
+- nested class
+
+Syntax:
+static int var=10;
+
+static method
+A static method belongs to the class rather than the object of a class. A static method can be invoked without the need for creating an instance of a class.
+
+Syntax:
+static void methodName(){
+}
+
+static block
+A static block is a block of code that is executed when the class is loaded into memory. It is used to initialize the static data members of the class.
+
+Syntax:
+static {
+}
+
+static nested class
+A static nested class is a class that is declared as static. It can access static data members of the outer class.
+
+Syntax:
+static class ClassName {
+}
+
+Note:
+    - Inside a static method, you cannot directly access a non-static method. To access a non-static method, you must first create an instance of the class and then call the non-static method using that instance.
+    - Inside a non-static method, you can access all members of the class.
