@@ -1,0 +1,18 @@
+Day 10 - Static and Final Keywords in Java
+
+1. Static Keyword:
+   - Used to create class-level variables and methods.
+   - Static variables are shared among all instances of a class.
+   - Static methods can be called without creating an instance of the class.
+
+2. Final Keyword:
+   - Used to declare constants, methods that cannot be overridden, and classes that cannot be inherited.
+   - A final variable can only be initialized once and cannot be reassigned.
+
+3. Examples:
+   - Utility Class: Contains static methods for math operations and a final static constant for PI.
+   - Employee Management: Uses static variables to track the number of employee instances and a final variable for retirement age.
+
+4. Key Takeaways:
+   - Static members belong to the class, not instances.
+   - Final members cannot be changed after initialization.
