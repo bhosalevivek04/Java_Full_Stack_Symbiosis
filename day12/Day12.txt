@@ -1,0 +1,17 @@
+Access Specifiers in Java
+
+This document provides an overview of access specifiers in Java, which are crucial for encapsulation in object-oriented programming. Java has four types of access specifiers:
+
+1. Public: Accessible from any other class in any package.
+2. Private: Accessible only within the class it is declared in.
+3. Protected: Accessible within the same package and in subclasses.
+4. Default: Accessible only within classes in the same package (no specifier).
+
+## Summary of Access Specifiers
+
+- Public: Least restrictive; members are accessible everywhere.
+- Private: Most restrictive; members are accessible only within the class.
+- Protected: Accessible in the same package and subclasses.
+- Default: Accessible only within the same package.
+
+Understanding these access specifiers helps in protecting sensitive data and ensuring better modularity in code design.
