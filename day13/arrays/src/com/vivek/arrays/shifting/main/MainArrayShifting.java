@@ -10,17 +10,19 @@ public class MainArrayShifting {
 		for (int i = 0; i < intArray.length; i++)
 			System.out.print(intArray[i] + " ");
 
+		
 		System.out.println();
-		shifting.leftShift(intArray);
+		shifting.RightShiftWithPosition(intArray, 2);
+//		shifting.leftShiftWithPosition(intArray,8);
 
 		//shallow copy concept
 		for (int i = 0; i < intArray.length; i++)
 			System.out.print(intArray[i] + " ");
-		
-		System.out.println();
-		shifting.rightShift(intArray);
-		for (int i = 0; i < intArray.length; i++)
-			System.out.print(intArray[i] + " ");
+//		
+//		System.out.println();
+//		shifting.rightShift(intArray);
+//		for (int i = 0; i < intArray.length; i++)
+//			System.out.print(intArray[i] + " ");
 	}
 
 }
