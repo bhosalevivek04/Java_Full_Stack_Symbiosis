@@ -18,10 +18,10 @@ public class BubbleSort {
 		this.stringArray = stringArray;
 	}
 
-	public void bubbleSort() {
+	public void bubbleSortString() {
 		int flag;
 		for (int i = 0; i < stringArray.length - 1; i++) {
-			flag = 0; // Reset flag for each pass
+			flag = 0;
 			for (int j = 0; j < stringArray.length - i - 1; j++) {
 				if (stringArray[j].compareTo(stringArray[j + 1]) > 0) {
 					String temp = stringArray[j];
@@ -39,5 +39,28 @@ public class BubbleSort {
 				break;
 			}
 		}
+	}
+	
+	public void bubbleSortInteger(int[] intArray) {
+	    int flag;
+	    for (int i = 0; i < intArray.length - 1; i++) {
+	        flag = 0;
+	        for (int j = 0; j < intArray.length - i - 1; j++) {
+	            if (intArray[j] > intArray[j + 1]) {
+	                int temp = intArray[j];
+	                intArray[j] = intArray[j + 1];
+	                intArray[j + 1] = temp;
+	                flag = 1;
+	            }
+	        }
+	        for (int number : intArray) {
+	            System.out.print(number + " ");
+	        }
+	        System.out.println();
+
+	        if (flag == 0) {
+	            break;
+	        }
+	    }
 	}
 }
