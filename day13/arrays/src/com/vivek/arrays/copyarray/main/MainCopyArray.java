@@ -12,7 +12,9 @@ public class MainCopyArray {
 		copyArray.setFirstArray(firstArray);
 		copyArray.setSecondArray(secondArray);
 //		int[] result = copyArray.copyTwoArrays();
-		int[] result1=copyArray.copyFirstHalfAndSecondHalfArray();
-		System.out.println(Arrays.toString(result1));
+//		int[] result1=copyArray.copyFirstHalfAndSecondHalfArray();
+		
+		int[] result2=copyArray.copyAndSortTwoHalfArray();
+		System.out.println(Arrays.toString(result2));
 	}
 }

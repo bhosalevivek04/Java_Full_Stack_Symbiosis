@@ -45,17 +45,44 @@ public class CopyArray {
 	}
 
 	public int[] copyFirstHalfAndSecondHalfArray() {
-	    int midFirst = (firstArray.length + 1) / 2;
-	    int midSecond = secondArray.length / 2;
-	    int[] result = new int[midFirst + (secondArray.length - midSecond)];
-	    int r = 0;
-	    for (int f = 0; f < midFirst; f++) {
-	        result[r++] = firstArray[f];
-	    }
+		int midFirst = (firstArray.length + 1) / 2;
+		int midSecond = secondArray.length / 2;
+		int[] result = new int[midFirst + (secondArray.length - midSecond)];
+		int r = 0;
+		for (int f = 0; f < midFirst; f++) {
+			result[r++] = firstArray[f];
+		}
 
-	    for (int s = midSecond; s < secondArray.length; s++) {
-	        result[r++] = secondArray[s];
-	    }
-	    return result;
+		for (int s = midSecond; s < secondArray.length; s++) {
+			result[r++] = secondArray[s];
+		}
+		return result;
 	}
+
+	public int[] copyAndSortTwoHalfArray() {
+		int mid1 = (firstArray.length - 1) / 2;
+		int mid2 = (secondArray.length - 1) / 2;
+		int[] result = new int[mid1 + 1 + mid2 + 1];
+
+		int f = 0;
+		int s = mid2;
+		int r = 0;
+		while (f <= mid1 && s < secondArray.length) {
+			if (firstArray[f] < secondArray[s]) {
+				result[r++] = firstArray[f++];
+			} else {
+				result[r++] = secondArray[s++];
+			}
+		}
+		while (f <= mid1 || s < secondArray.length) {
+			if (f <= mid1 && (s >= secondArray.length || firstArray[f] < secondArray[s])) {
+				result[r++] = firstArray[f++];
+			} else if (s < secondArray.length) {
+				result[r++] = secondArray[s++];
+			}
+		}
+
+		return result;
+	}
+
 }
