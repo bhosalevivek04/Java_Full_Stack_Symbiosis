@@ -1,0 +1,30 @@
+Arrays Class
+
+Assignment
+    - Matrix addition
+    - Matrix Multiplication
+
+https://github.com/bhosalevivek04/Java_Full_Stack_Symbiosis/blob/b82163aabd12f78bf4329f63486efe665dd494ed/day18/18.txt
+
+Disadvantage
+    - Array fix in size
+    - homogeneous
+    - early initialization
+
+Assessment-
+    logical programs
+    recurtion
+    Array 
+    sorting
+
+OOPS Pillar
+
+OOPS Concepts:
+    1. Encapsulation: Binding data and methods that manipulate that data into a single unit.
+        - making properties privtate and exposing behavior by using accessor and mutator
+
+    2. Abstraction: Hiding internal implementation details and showing only necessary information to the outside world.
+    3. Inheritance: Creating a new class based on an existing class, inheriting its properties and behavior.
+    4. Polymorphism: Ability of an object to take on multiple forms, depending on the context in which it is used.
+
+
