@@ -1,0 +1,17 @@
+follow day 18 folder
+
+Assignment:
+Bill{
+        int units;
+        public Bill(int unit){
+            this.units-unit;
+        }
+        getter and setter
+        abstract float generateBill(int unit);
+    }
+        - child class
+
+            DomesticBill
+            IndustrialBill
+
+MainBill

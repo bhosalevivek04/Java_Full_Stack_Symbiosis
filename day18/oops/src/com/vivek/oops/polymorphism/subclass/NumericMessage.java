@@ -21,7 +21,7 @@ public class NumericMessage extends PrintMessage {
 	}
 
 	@Override
-	public NumericMessage getObj() throws IndexOutOfBoundsException {
+	public NumericMessage getObj() throws Exception {
 		return new NumericMessage();
 	}
 }

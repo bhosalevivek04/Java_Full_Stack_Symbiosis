@@ -21,7 +21,7 @@ public class PrintMessage {
 		this.msg = msg;
 	}
 
-	public PrintMessage getObj() throws IndexOutOfBoundsException {
+	public PrintMessage getObj() throws Exception {
 		return new PrintMessage();
 	}
 }
