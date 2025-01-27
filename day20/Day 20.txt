@@ -15,3 +15,7 @@ Bill{
             IndustrialBill
 
 MainBill
+
+Check below folder
+Java Full Stack\day18\oops\src\com\vivek\oops\inheritance
+assignment done
