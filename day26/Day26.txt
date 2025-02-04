@@ -1,0 +1,16 @@
+Byte, Short, Integer, Long, Float, Double, Character, Boolean, Void
+
+    auto Boxing and auto Unboxing
+
+    auto Boxing:
+        int a = 10;
+        Integer b = a;
+
+    auto Unboxing:
+        Integer b = 10;
+        int a = b;
+
+    auto Boxing and Unboxing is done by compiler automatically
+
+    auto Boxing and Unboxing is done when a primitive type is assigned to a wrapper object or a wrapper object is assigned to a primitive type.
+    
