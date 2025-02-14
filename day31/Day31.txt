@@ -1,0 +1,11 @@
+try,catch,finally
+nested try catch
+
+- Array does not based on any underlying data structure
+- homogenous
+
+
+Collection framework
+    - underlying data structure
+    - heterogenous
+    - 
