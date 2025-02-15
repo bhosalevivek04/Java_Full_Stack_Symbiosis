@@ -14,7 +14,7 @@ public class StudentDao {
 //		}
 
 		try {
-			int result = Integer.parseInt("ABC");
+			int result = Integer.parseInt("123");
 		} catch (NumberFormatException e) {
 			throw (new Exception(e.getMessage(), e));
 		}

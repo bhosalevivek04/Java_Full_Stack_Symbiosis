@@ -1,0 +1,28 @@
+Custom Exception
+
+Collection Framework
+    - A unified architecture for representing and manipulating collections.
+    - Provides interfaces and classes for working with collections.
+    - Located in the java.util package.
+
+Key Interfaces in Collection Framework
+    - Collection: Represents a group of objects as a single entity.
+    - List: An ordered collection that preserves insertion order, allows duplicates, and allows null.
+    - Set: An unordered collection that does not allow duplicates.
+    - Map: An object that maps keys to values.
+
+Implementations of Collection Framework
+    - ArrayList: A resizable array implementation of the List interface.
+    - LinkedList: A doubly-linked list implementation of the List interface.
+    - HashSet: A hash table-based implementation of the Set interface.
+    - HashMap: A hash table-based implementation of the Map interface.
+
+Benefits of Collection Framework
+    - Provides a common interface for different types of collections.
+    - Allows for easy iteration over collections.
+    - Supports operations such as add, remove, and search.
+    - Enhances code reusability and flexibility.
+
+
+    
+

@@ -1,15 +1,21 @@
 package com.vivek.exception.service;
 
+import com.vivek.exception.customexceptions.InvalidAgeException;
+import com.vivek.exception.customexceptions.InvalidNameException;
 import com.vivek.exception.dao.StudentDao;
 import com.vivek.exception.entities.Student;
 
 public class StudentService {
-	public String insert(Student student) throws Exception{
-		if(student.getAge()<=18) {
-			throw(new RuntimeException("Invaid Age..."));
+	public String insert(Student student) throws InvalidNameException, Exception {
+		if (student.getAge() <= 18) {
+			throw (new InvalidAgeException("Invaid Age..."));
 		}
-		
-		StudentDao studentDao=new StudentDao();
+
+		if (!student.getName().matches("[A-Z][a-z]{1,15}")) {
+			throw (new InvalidNameException("Invalid Name..."));
+		}
+
+		StudentDao studentDao = new StudentDao();
 		return studentDao.insert(student);
 	}
 }
