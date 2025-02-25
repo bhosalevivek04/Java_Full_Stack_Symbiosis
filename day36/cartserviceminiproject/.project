@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>collections</name>
+	<name>cartserviceminiproject</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1740464698404</id>
+			<id>1740464698392</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
