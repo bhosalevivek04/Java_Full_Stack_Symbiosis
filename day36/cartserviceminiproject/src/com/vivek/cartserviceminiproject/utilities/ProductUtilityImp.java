@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 import com.vivek.cartserviceminiproject.entities.ElectronicProduct;
 import com.vivek.cartserviceminiproject.entities.Product;
+import com.vivek.cartserviceminiproject.services.ProductService;
+import com.vivek.cartserviceminiproject.services.ProductServiceImp;
 
-public class ProductUtilityImp implements ProductUtility{
+public class ProductUtilityImp implements ProductUtility {
 	private Product product;
-	
+	ProductService service = new ProductServiceImp();
+
 	public ProductUtilityImp(Product product) {
 		this.product = product;
 	}
@@ -19,62 +22,66 @@ public class ProductUtilityImp implements ProductUtility{
 		String brand;
 		float price;
 		System.out.println("Enter Product Id: ");
-		id= scanner.nextInt();
+		id = scanner.nextInt();
 		scanner.nextLine();
 		System.out.println("Enter Product Name: ");
-		name=scanner.nextLine();
+		name = scanner.nextLine();
 		System.out.println("Enter Product Brand: ");
 		brand = scanner.nextLine();
 		System.out.println("Enter Product Price: ");
-		price=scanner.nextFloat();
-		ElectronicProduct eProduct=new ElectronicProduct(id, name, brand, price); 
-		product.getProductList().add(eProduct);
-		System.out.println("Product Added Successfully..");
+		price = scanner.nextFloat();
+		ElectronicProduct eProduct = new ElectronicProduct(id, name, brand, price);
+		System.out.println(service.add(product, eProduct));
+
+//		product.getProductList().add(eProduct);
+//		System.out.println("Product Added Successfully..");
 	}
 
 	@Override
 	public void delete(Scanner scanner) {
 		print();
 		System.out.println("Enter a sr.No of Product to delete");
-		int index=scanner.nextInt();
-		product.getProductList().remove(index-1);
-		System.out.println("Product Deleted Successfully..");
+		int index = scanner.nextInt();
+		System.out.println(service.delete(product, index));
+//		product.getProductList().remove(index-1);
+//		System.out.println("Product Deleted Successfully..");
 	}
 
 	@Override
 	public void update(Scanner scanner) {
 		print();
 		System.out.println("Enter a sr.No of Product to update");
-		int index=scanner.nextInt();
+		int index = scanner.nextInt();
 		int id;
 		String name;
 		String brand;
 		float price;
 		System.out.println("Enter Product Id: ");
-		id= scanner.nextInt();
+		id = scanner.nextInt();
 		scanner.nextLine();
 		System.out.println("Enter Product Name: ");
-		name=scanner.nextLine();
+		name = scanner.nextLine();
 		System.out.println("Enter Product Brand: ");
 		brand = scanner.nextLine();
 		System.out.println("Enter Product Price: ");
-		price=scanner.nextFloat();
-		ElectronicProduct eProduct=new ElectronicProduct(id, name, brand, price); 
-		product.getProductList().set(index-1, eProduct);
+		price = scanner.nextFloat();
+		ElectronicProduct eProduct = new ElectronicProduct(id, name, brand, price);
+		System.out.println(service.update(product, eProduct, index));
+
+//		product.getProductList().set(index-1, eProduct);
 	}
 
 	@Override
 	public void print() {
-		if(product.getProductList().isEmpty()) {
+		if (product.getProductList().isEmpty()) {
 			System.out.println("Products are out of Stock..");
-		}
-		else {
-			int i=1;
-			for(ElectronicProduct eProduct:product.getProductList())
-				System.out.println((i++) +") " +eProduct);
+		} else {
+			int i = 1;
+			for (ElectronicProduct eProduct : product.getProductList())
+				System.out.println((i++) + ") " + eProduct);
 		}
 	}
-	
+
 	private int printMenu(Scanner scanner) {
 		System.out.println("Product Menu");
 		System.out.println("	1.Add");
@@ -87,10 +94,10 @@ public class ProductUtilityImp implements ProductUtility{
 
 	@Override
 	public void manipulateProduct(Scanner scanner) {
-		int choice=0;
+		int choice = 0;
 		do {
-			choice=printMenu(scanner);
-			switch(choice) {
+			choice = printMenu(scanner);
+			switch (choice) {
 			case 1 -> add(scanner);
 			case 2 -> update(scanner);
 			case 3 -> delete(scanner);
@@ -98,10 +105,8 @@ public class ProductUtilityImp implements ProductUtility{
 			case 0 -> System.out.println("Exited from Product Manu");
 			default -> System.out.println("Invalid Input");
 			}
-			
-		}while(choice!=0);
+
+		} while (choice != 0);
 	}
-	
-	
 
 }
