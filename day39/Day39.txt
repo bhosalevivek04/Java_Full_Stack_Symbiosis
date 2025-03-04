@@ -1,0 +1,27 @@
+Queue
+    Priority Queue
+
+
+- Comaparable is used for natural sorting
+    comareTo()
+- Comparator is used for custom sorting
+    compare(T o1,T o2) it accept to parameter
+- if both we use then Comparator have high Priority bcz its local implementation
+
+StudentQueue
+    roll_no
+    name
+    age
+    fees
+
+make Priority Queue
+
+
+Aggregation
+    loosely coupled
+
+composition
+    tightly coupled
+
+
+Array Blocking Queue
