@@ -1,10 +1,10 @@
 package com.vivek.collection.queue.blockingqueue;
 
-import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
-public class ArrayBlockingQueueDemo {
+public class LinkedBlockingQueueDemo {
 	public static void main(String[] args) {
-		ArrayBlockingQueue<Integer> intQueue = new ArrayBlockingQueue<>(5);
+		LinkedBlockingQueue<Integer> intQueue = new LinkedBlockingQueue<>();
 
 		// Consumer
 		new Thread(() -> {
@@ -12,24 +12,26 @@ public class ArrayBlockingQueueDemo {
 				try {
 					intQueue.put(i);
 					System.out.println("set: " + i);
-					Thread.sleep(1000);
+					Thread.sleep(100);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 			}
 		}).start();
+		;
 
 		// Supplier
 		new Thread(() -> {
-			for(int i = 0; i < 10; i++) {
+			for (int i = 0; i < 10; i++) {
 				try {
-					System.out.println("get: "+intQueue.take());
+					System.out.println("get: " + intQueue.take());
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 			}
-		}).start();;
+		}).start();
+		;
 
 	}
 
