@@ -1,0 +1,9 @@
+Set
+    introduce in 1.2 version
+    in background it use Array
+    java.util
+    duplicates not allowed
+
+Implemented class
+    Hashset
+    
