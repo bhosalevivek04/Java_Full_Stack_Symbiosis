@@ -1,0 +1,39 @@
+Collections class
+
+
+Multithreading in Java
+    - lightweight process = task
+    - program = divide into multiple task
+    
+    Multithreading vs Multiprocessing
+    - multithreading = multiple thread in single process
+    - multiprocessing = multiple process in single program
+
+
+Thread LifeCycle
+    - new
+    - runnable
+    - running
+    - wait
+    - terminated
+    
+new -> runnable = start() method executed
+runnable -> running = run() method executed
+running -> wait = sleep() method executed
+running -> terminated = stop() method executed
+
+task schedular
+
+Object class method
+- equals()
+- hashCode()
+- toString()
+- clone()
+- wait()
+- notify()
+- notifyAll()
+
+
+- in interface all variables are public static final by default
+- in abstract class all methods have public abstract
+- in class all methods have public by default

@@ -19,6 +19,6 @@ public class TreeMapDemo {
 		studentRecord1.put(new Student(1, "Vivek"), 70000F);
 		studentRecord1.put(new Student(2, "Ashish"), 75000F);
 		studentRecord1.forEach((k, v) -> System.out.println(k + " -> " + v));
-
+		
 	}
 }
