@@ -1,0 +1,13 @@
+JDBC
+
+steps in JDBC
+1. Load the JDBC driver
+2. Register the JDBC driver
+3. Connect to the database
+4. Create a statement
+5. Execute the query
+6. Get the result set
+7. Close the result set
+8. Close the statement
+9. Close the connection
+
